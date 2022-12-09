@@ -10,7 +10,7 @@ RUN apt-get -y install python3-venv
 RUN python3.8 -m venv /opt/venv
 RUN . /opt/venv/bin/activate
     
-# Below env var required to install dependencies non-interactively
+# Below ENV variables required to install dependencies non-interactively
 ENV TZ=America/Los_Angeles
 ENV DEBIAN_FRONTEND noninteractive
 ENV QT_DEBUG_PLUGINS=1 
